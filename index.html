@@ -1,0 +1,16 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>YouTubePlus SideStore Source</title>
+  </head>
+  <body>
+    <h1>YouTubePlus SideStore Source</h1>
+    <p>Copy this source URL into SideStore:</p>
+    <p><code id="url">apps.json</code></p>
+    <script>
+      document.getElementById("url").textContent = new URL("apps.json", window.location.href).href;
+    </script>
+  </body>
+</html>

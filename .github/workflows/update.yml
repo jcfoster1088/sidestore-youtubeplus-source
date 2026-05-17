@@ -1,0 +1,61 @@
+name: Update SideStore source
+
+on:
+  schedule:
+    - cron: "17 */6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Filter YouProEXTRA source
+        run: |
+          python - <<'PY'
+          import json
+          import os
+          import urllib.request
+
+          upstream = "https://raw.githubusercontent.com/mrdrvt99/Altstore-Repository/main/apps.json"
+          repo = os.environ["GITHUB_REPOSITORY"]
+          source_url = f"https://raw.githubusercontent.com/{repo}/main/apps.json"
+
+          with urllib.request.urlopen(upstream, timeout=30) as response:
+              upstream_data = json.load(response)
+
+          target = None
+          for app in upstream_data.get("apps", []):
+              if app.get("name") == "YoutubePlus (YTLite)":
+                  target = app
+                  break
+
+          if target is None:
+              raise SystemExit("Could not find YoutubePlus (YTLite) in upstream source")
+
+          output = {
+              "name": "YouTubePlus YTLite",
+              "identifier": "com.custom.youtubeplus.ytlite.source",
+              "sourceURL": source_url,
+              "apps": [target],
+          }
+
+          with open("apps.json", "w", encoding="utf-8") as file:
+              json.dump(output, file, indent=2, ensure_ascii=False)
+              file.write("\n")
+          PY
+
+      - name: Commit changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if ! git diff --quiet apps.json; then
+            git add apps.json
+            git commit -m "Update YouTubePlus SideStore source"
+            git push
+          fi

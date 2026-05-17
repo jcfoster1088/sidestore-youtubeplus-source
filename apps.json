@@ -1,0 +1,20 @@
+{
+  "name": "YouTubePlus YTLite",
+  "identifier": "com.custom.youtubeplus.ytlite.source",
+  "sourceURL": "https://raw.githubusercontent.com/jcfoster1088/sidestore-youtubeplus-source/main/apps.json",
+  "apps": [
+    {
+      "name": "YoutubePlus (YTLite)",
+      "bundleIdentifier": "com.google.ios.youtube",
+      "developerName": "dayanch96",
+      "version": "21.19.2",
+      "versionDate": "2026-05-12T16:35:57+03:00",
+      "versionDescription": "[YTLite] YouTube 21.19.2 | YouTubePlus_21.19.2_5.2.1\n\nSideStore crash fixed\nCasting work\nno 4K/has background pip/downloads feature.",
+      "downloadURL": "https://github.com/mrdrvt99/YouProEXTRA/releases/download/ytl-ipa16/YouTubePlus_21.19.2_5.2.1.ipa",
+      "localizedDescription": "YouTubePlus/YTLite 21.19.2 build with casting working.",
+      "iconURL": "https://raw.githubusercontent.com/mrdrvt99/Altstore-Repository/main/assets/YouTube.png",
+      "tintColor": "FF0000",
+      "size": 130830323
+    }
+  ]
+}
