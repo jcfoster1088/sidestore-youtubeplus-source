@@ -7,15 +7,15 @@
       "name": "YoutubePlus (YTLite)",
       "bundleIdentifier": "com.google.ios.youtube",
       "developerName": "dayanch96",
-      "version": "21.20.4",
-      "versionDate": "2026-05-21T21:11:50+03:00",
-      "versionDescription": "[YTLite] YouTube 21.20.4 | YouTubePlus_21.20.4_5.2.1",
-      "downloadURL": "https://github.com/mrdrvt99/YouProEXTRA/releases/download/ytl-ipa2/YouTubePlus_21.20.4_5.2.1.ipa",
+      "version": "21.21.3",
+      "versionDate": "2026-05-23T18:53:08+03:00",
+      "versionDescription": "[YTLite] YouTube 21.21.3 | YouTubePlus_21.21.3_5.2.1",
+      "downloadURL": "https://github.com/mrdrvt99/YouProEXTRA/releases/download/ytl-ipa1/YouTubePlus_21.21.3_5.2.1.ipa",
       "localizedDescription": "A lightweight, ad-free YouTube experience.",
       "iconURL": "https://raw.githubusercontent.com/mrdrvt99/Altstore-Repository/main/assets/YouTube.png",
       "tintColor": "FF0000",
       "isLanZouCloud": 0,
-      "size": 131661342,
+      "size": 131886130,
       "type": 1
     }
   ]
