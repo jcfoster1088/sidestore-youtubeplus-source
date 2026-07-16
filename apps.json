@@ -7,15 +7,15 @@
       "name": "YoutubePlus (YTLite)",
       "bundleIdentifier": "com.google.ios.youtube",
       "developerName": "dayanch96",
-      "version": "21.28.3",
-      "versionDate": "2026-07-13T00:31:51+03:00",
-      "versionDescription": "[YTLite] YouTube 21.28.3 | YouTubePlus_21.28.3_5.2.1\n\n1. fresh install recommended for best performance.\r\n2. YTUHD now incompatible. removed.\r\n> [!NOTE]  \r\n> Downloads no longer works",
-      "downloadURL": "https://github.com/mrdrvt99/YouProEXTRA/releases/download/ytl-ipa2/YouTubePlus_21.28.3_5.2.1.ipa",
+      "version": "21.24.3",
+      "versionDate": "2026-07-16T18:07:05+03:00",
+      "versionDescription": "[YTLite] YouTube 21.24.3 | YouTubePlus_21.24.3_5.2.1\n\nLatest stable release, Enjoy!!\r\n> [!NOTE]  \r\n> enable downloads by going to YouTubePlus settings and set it to Overlay/Both instead of under the player.\r\n\r\n> [!NOTE]  \r\n> +21.25.5 and newer versions are not recommended right now -- download manager and other several tweaks are broken.",
+      "downloadURL": "https://github.com/mrdrvt99/YouProEXTRA/releases/download/ytl-ipa1/YouTubePlus_21.24.3_5.2.1.ipa",
       "localizedDescription": "A lightweight, ad-free YouTube experience.",
       "iconURL": "https://raw.githubusercontent.com/mrdrvt99/Altstore-Repository/main/assets/YouTube.png",
       "tintColor": "FF0000",
       "isLanZouCloud": 0,
-      "size": 131762395,
+      "size": 128877794,
       "type": 1
     }
   ]
